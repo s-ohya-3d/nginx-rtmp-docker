@@ -1,0 +1,13 @@
+
+# docker build -t nginx:rtmp .
+
+version: '2'
+services:
+  rtmp:
+    image: nginx:rtmp
+    ports:
+      - "80:80"
+      - "1935:1935"
+#    volumes:
+#      - "./rec:/opt/local/nginx/html/rec"
+
